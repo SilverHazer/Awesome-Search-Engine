@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html><head>
+<title>SearchBar Options</title>
+<style type="text/css">
+body{
+  font-family:sans-serif;
+  font-size:14px;
+}
+small{
+  font-size:12px;
+}
+h1{
+  margin-bottom:5px;
+}
+legend{
+  font-size:1.5em;
+  padding:0px;
+  font-weight:bold;
+}
+fieldset{
+  margin:10px 14px 24px 0px;
+  padding:0px 10px;
+  border:1px solid #a9a9a9;
+  border-radius:5px;
+}
+table{
+  border-collapse:collapse;
+}
+textarea{
+  white-space:nowrap;
+}
+img#brosmalllogo{
+  position:absolute;
+  top:4px;
+  right:8px;
+  height:72px;
+  border-radius:1px;
+}
+img.icon{
+  vertical-align:middle;
+}
+td#sidebar{
+  font-size:1.25em;
+  font-weight:bold;
+  vertical-align:top;
+  white-space:nowrap;
+}
+p.sidebarlink{
+  padding:3px 6px;
+  cursor:pointer;
+}
+p.sidebarlink:hover{
+  background-color:#f5f5f5;
+}
+p.sidebarselected{
+  background-color:#d8dfea;
+  padding:3px 6px;
+  cursor:pointer;
+}
+p#supportlink{
+  color:#0000ff;
+}
+td.settingsbar{
+  display:none;
+}
+td.settingsselected{
+  padding:3px 0px 0px 10px;
+  vertical-align:top;
+}
+td#intro{
+  font-size:1.25em;
+}
+table.introleft{
+  margin-right:auto;
+}
+table.introright{
+  margin-left:auto;
+}
+table.introleft,table.introright{
+  margin-bottom:16px;
+}
+td.introcell,td.introcellleft,td.introcellright{
+  vertical-align:middle;
+  padding:10px;
+}
+td.introcell{
+  text-align:center;
+}
+td.introcellleft{
+  text-align:left;
+}
+td.introcellright{
+  text-align:right;
+  }
+td.introcellright p{
+  padding:24px 0px;
+}
+img#introimage1,img#introimage2,img#introimage3,img#introimage6,div#previewcontainer1,img#maarten,img#brobiglogo,img#brosmalllogo:hover{
+  box-shadow:3px 3px 6px #888888;
+}
+img#introimage1,img#introimage2,img#introimage3{
+  border-radius:0px 0px 5px 5px;
+}
+img#introimage4{
+  padding:0px 0px 5px 5px;
+}
+img#introimage6{
+  padding:10px 0px 10px 10px;
+  border-radius:5px;
+}
+button#toggleadvanced{
+  font-size:12px;
+}
+span#previewcontainer2,span#previewcontainer3,table#findbuttonhotkeystable{
+  margin-left:1em;
+}
+th.custombuttonsheader,td.custombuttoncell,th.findbuttonhotkeysheader,td.findbuttonhotkeyscell{
+  text-align:center;
+  white-space:nowrap;
+}
+button.removebutton{
+  height:20px;
+  width:20px;
+  padding:0px;
+}
+img.removebuttonimage{
+  vertical-align:-3px;
+}
+div#notes{
+  margin-bottom:14px;
+}
+h3#notesheading{
+  margin-bottom:10px;
+}
+p.note{
+  margin:2px 0px 6px 1em;
+}
+h2.faqheader{
+  margin-top:36px;
+}
+h3.faqheader{
+  margin-top:28px;
+}
+td#support p{
+  font-size:17px;
+}
+img#maarten,img#brobiglogo{
+  border-radius:2px;
+  float:left;
+  margin-right:16px;
+}
+img#maarten{
+  margin-top:14px;
+  margin-bottom:18px;
+}
+#aftermaarten{
+  clear:left;
+}
+td.supportcell{
+  vertical-align:baseline;
+}
+img.centredpicture{
+  vertical-align:middle;
+}
+input#newrowfileinput{
+  display:none;
+}
+span#portwarning{
+  display:none;
+}
+span#portwarning b{
+  color:#ff0000;
+}
+</style>
+<script src="options.js"></script>
+</head><body>
+<a target="_blank" href="about:blank"><img src="logo_bro.jpg" id="brosmalllogo"></a>
+<h1><img src="icon48.png" class="icon"> SearchBar Options</h1>
+<table><tr>
+  <td id="sidebar">
+    <p id="introlink" class="sidebarlink">Introduction</p>
+    <p id="basiclink" class="sidebarlink">Basic settings</p>
+    <p id="advancedlink" class="sidebarlink">Advanced settings</p>
+    <p id="customlink" class="sidebarlink">Custom searches</p>
+    <p id="helplink" class="sidebarlink">Help/FAQ</p>
+    <p id="supportlink" class="sidebarlink">Support SearchBar</p></td>
+  <td id="intro" class="settingsbar">
+    <table class="introright"><tr><td class="introcell">press <b id="hotkeyshowmirror"></b> from a web page to open SearchBar</td><td class="introcellleft"><div id="previewcontainer1"><span id="searchbarpreview"></span></div></td></tr></table>
+    <table class="introleft"><tr><td class="introcell"><img id="introimage1" src="intro1.png"></td><td class="introcell"><b>selected text</b> appears automatically</td></tr></table>
+    <table class="introright"><tr><td class="introcellright"><p>type for <b>search suggestions</b></p><p>press a <b>button</b> or <b>hotkey</b> to search</p><p>hold Ctrl to open in a <b>new tab</b></p></td><td class="introcell"><img id="introimage2" src="intro2.png"></td></tr></table>
+    <table class="introleft"><tr><td class="introcell"><img id="introimage3" src="intro3.png"></td><td class="introcell"><b>highlight</b> search terms</td></tr></table>
+    <table class="introright"><tr><td class="introcell">right-click on an input field to add a <b>custom search</b></td><td class="introcell"><img id="introimage4" src="intro4.png"></td><td class="introcell"><img id="introimage5" src="intro5.png"></td></tr></table>
+    <table class="introleft"><tr><td class="introcell"><img id="introimage6" src="intro6.png"></td><td class="introcell"><b>customize</b> everything here</td></tr></table>
+    <table class="introright"><td class="introcellright">If you experience any problems, first try refreshing the page.<br>Next try disabling and re-enabling SearchBar from Chrome's Extensions page.<br>Then go to "Help/FAQ" to view the FAQ or submit a support request.</td></table>
+  </td>
+  <td id="settings" class="settingsbar">
+    <fieldset>
+      <legend>Display settings</legend>
+      <p class="advanced"><b>SearchBar preview:</b><br>
+        <span id="previewcontainer2"></span></p>
+      <p>Show SearchBar when I press this key combination: <input type="text" size="25" id="hotkeyshow" disabled><br>
+        <span class="advanced"><small> (to set a hotkey that will work from the New Tab page, select "Keyboard shortcuts" from the bottom of Chrome's Extensions page)</small><br>
+        Hide SearchBar when I press this key combination <input type="radio" name="escfromanywhere" id="notescfromanywhere" value="false" disabled> <label for="notescfromanywhere">into SearchBar</label> <input type="radio" name="escfromanywhere" id="escfromanywhere" value="true" disabled> <label for="escfromanywhere">from anywhere</label>: <input type="text" size="25" id="hotkeyhide" disabled><br>
+        <input type="checkbox" id="showonsessionstartup" disabled> <label for="showonsessionstartup">Show SearchBar at the start of my browsing session</label><br></span>
+        <input type="checkbox" id="notshowingremember" disabled> <label for="notshowingremember">Hide SearchBar when I go to a new page</label><br>
+        <input type="checkbox" id="showontextselection" disabled> <label for="showontextselection">Show SearchBar while I have text selected</label><span class="advanced"> &ndash; <input type="checkbox" id="showontextselectionexception"> <label for="showontextselectionexception">except for text in input fields</label><br>
+        <input type="checkbox" id="forcepopup" disabled> <label for="forcepopup">Always show SearchBar in a popup when I press the toolbar button</label><small> (certain features will be disabled)</small></span><br></p>
+      <p><b>Appearance:</b><br>
+        &emsp;Position SearchBar at the <input type="radio" name="position" id="positiontopleft" value="topleft" disabled> <label for="positiontopleft">top left</label> <input type="radio" name="position" id="positiontopright" value="topright" disabled> <label for="positiontopright">top right</label> <input type="radio" name="position" id="positionbottomleft" value="bottomleft" disabled> <label for="positionbottomleft">bottom left</label> <input type="radio" name="position" id="positionbottomright" value="bottomright" disabled> <label for="positionbottomright">bottom right</label><br>
+        <span class="advanced">&emsp;Order SearchBar <input type="radio" name="direction" id="directionltr" value="ltr" disabled> <label for="directionltr">from left to right</label> <input type="radio" name="direction" id="directionrtl" value="rtl" disabled> <label for="directionrtl">from right to left</label> <input type="radio" name="direction" id="directioninitial" value="initial" disabled> <label for="directioninitial">according to the default</label><br></span>
+        &emsp;Enlarge buttons by <input type="number" id="extrapixels" min="0" max="50" step="1" disabled> pixels<br>
+        <span class="advanced">&emsp;Display separators between custom searches as <input type="radio" name="separatorsaslinebreaks" id="notseparatorsaslinebreaks" value="false" disabled> <label for="notseparatorsaslinebreaks">vertical bars</label> <input type="radio" name="separatorsaslinebreaks" id="separatorsaslinebreaks" value="true" disabled> <label for="separatorsaslinebreaks">line breaks</label><br>
+        &emsp;<input type="checkbox" id="displaycross" disabled> <label for="displaycross">Display the "hide SearchBar" button</label><br>
+        &emsp;<input type="checkbox" id="displayoptionspagelink" disabled> <label for="displayoptionspagelink">Display the link to this page</label><small> (there is always a link from Chrome's Extensions page)</small><br>
+        &emsp;<input type="checkbox" id="pinned" disabled> <label for="pinned">SearchBar displaces web pages</label><small> (may interfere with some web pages or overlap other toolbars)</small></span></p>
+    </fieldset>
+    <fieldset>
+      <legend>Features</legend>
+      <p><input type="checkbox" id="alwaysnewtab" disabled> <label for="alwaysnewtab">Open search results in a new tab by default</label><span class="advanced"><small> (does not affect hotkeys)</small><br>
+        <input type="checkbox" id="alwaysforegroundtab" disabled> <label for="alwaysforegroundtab">Open new tabs in the foreground by default</label><small> (a new tab can always be opened in the foreground by holding Shift)</small><br>
+        <input type="checkbox" id="notsearchremember" disabled> <label for="notsearchremember">Clear SearchBar when I go to a new page</label><br>
+        <input type="checkbox" id="removewhitespace" disabled> <label for="removewhitespace">Remove leading and trailing whitespace from selected text</label><br>
+        <input type="checkbox" id="imageproxy" disabled> <label for="imageproxy">Use the images.weserv.nl image proxy where possible to display icons over https</label></span></p>
+      <p><b>Search suggestions:</b><br>
+        &emsp;<input type="checkbox" id="sendsearchsuggestions" disabled> <label for="sendsearchsuggestions">Get search suggestions from Google</label><br>
+        &emsp;Use www.google<select id="searchsuggestionslocale" disabled></select><br>
+        <span class="advanced">&emsp;Display up to <input type="number" id="maximumnumberofsearchsuggestions" min="1" max="10" step="1" disabled> suggestions</span></p>
+      <p><b>Highlight search terms:</b><br>
+        &emsp;<input type="checkbox" id="displayhighlightbutton" disabled> <label for="displayhighlightbutton">Display button</label><br>
+        &emsp;Hotkey: <input type="text" size="25" id="hotkeyhighlight" disabled><button id="removehotkeyhighlight" disabled>remove</button><br>
+        <span class="advanced">&emsp;<input type="checkbox" id="nothighlightingremember" disabled> <label for="nothighlightingremember">Clear highlighting when I go to a new page</label><br>
+        &emsp;<b>Tip:</b> Use quotation marks to specify an exact phrase or a word fragment to be highlighted.</span></p>
+      <p><b>Find search terms in page:</b><br>
+        &emsp;<input type="checkbox" id="displayfindbuttons" disabled> <label for="displayfindbuttons">Enable buttons</label><br>
+        <span class="advanced">&emsp;Maximum number of buttons: <input type="number" min="1" max="100" step="1" id="maximumnumberoffindbuttons" disabled><br>
+        &emsp;<b>Tip:</b> Once you have used a button, press Space to use it again. Hold Shift to find the previous result.<br></span></p>
+      <table id="findbuttonhotkeystable" class="advanced"><thead><tr><th class="findbuttonhotkeysheader">Button</td><th class="findbuttonhotkeysheader">Find next hotkey</th><th class="findbuttonhotkeysheader">Find previous hotkey</th></tr></thead><tbody id="findbuttonhotkeys"></tbody></table>
+      <p class="advanced"><b>Detect normal searches:</b><br>
+        &emsp;<input type="checkbox" id="detect" disabled> <label for="detect">Attempt to detect normal searches and populate SearchBar with search terms</label><br>
+        &emsp;<input type="radio" name="detectprimary" id="detectprimary" value="true" disabled> <label for="detectprimary">Use the Search URL of my primary (leftmost) search (highlighted at the top of your custom searches)</label><br>
+        &emsp;<input type="radio" name="detectprimary" id="notdetectprimary" value="false" disabled> <label for="notdetectprimary">Use these Search URLs with %s in place of query (one per line)</label>:<br>
+        &emsp;&emsp;<textarea id="detectcustom" wrap="off" rows="4" cols="50" disabled></textarea><br>
+        &emsp;<input type="checkbox" id="detecttosearchhistory" disabled> <label for="detecttosearchhistory">Record detected search terms to my search history (if search recording is enabled)</label></p>
+    </fieldset>
+    <fieldset>
+      <legend>Search history<small> (automatically disabled in incognito mode)</small></legend>
+      <p><span class="advanced">Suggest up to <input type="number" id="maximumnumberofsearchhistorysuggestions" min="0" max="100" step="1" disabled> previous searches<br>
+        <b>Tip:</b> Hold Alt or Shift while pressing Up or Down to skip between search suggestions and previous searches.<br></span>
+        <input type="checkbox" id="disablesearchhistory" disabled> <label for="disablesearchhistory">Stop recording searches</label><br>
+        <span class="advanced">Edit search history:<br>
+        &emsp;<textarea id="searchhistory" wrap="off" rows="10" cols="50" disabled></textarea></span></p>
+    </fieldset>
+    <fieldset class="advanced">
+      <legend>Import/export settings</legend>
+      <p>Use this feature to change all of your settings at once.  Not recommended to be edited manually.<br>
+      Delete everything and click "Save changes" to reset to the default settings.<br>
+      <span id="portwarning"><b>Warning:</b> Your settings exceed 65535 characters, which may prevent this feature from working. Reduce the size of your uploaded images to resolve this issue.<br></span>
+      &emsp;<button id="portselectall" disabled>Select all</button><button id="portsavechanges" disabled>Save changes</button><br>
+      &emsp;<textarea id="porttext" wrap="off" rows="1" cols="50" disabled></textarea></p>
+    </fieldset>
+  </td>
+  <td id="customsettings" class="settingsbar">
+    <fieldset>
+      <legend>Custom searches</legend>
+      <p><b>SearchBar preview:</b><br>
+        <span id="previewcontainer3"></span></p>
+      <p>To add a new custom search, right-click on any search engine's input field and select "Add to SearchBar...".<br>
+        Alternatively, you can add custom searches manually via the advanced options.<br>
+        <button id="toggleadvanced">show advanced options</button></p>
+      <table id="custombuttons"><tr><th class="custombuttonsheader">Properties<br><small>(hover to view)</small></th><th class="custombuttonsheader">Description<br><small>&nbsp;</small></th><th class="custombuttonsheader">Home page URL<br><small>(see note below)</small></th><th class="custombuttonsheader">Search URL<br><small>with <i>%s</i> in place of query</small></th><th class="custombuttonsheader">Icon URI<br><small>(see note below)</small></th><th class="custombuttonsheader">Hotkey<br><small>(press cross to remove)</small></th><th class="custombuttonsheader">New tab hotkey<br><small>&ndash; background tab</small></th><th class="custombuttonsheader">New tab hotkey<br><small>&ndash; foreground tab</small></th></tr>
+        <tr id="newrow"><td class="custombuttoncell"><button id="newrowcreatenew" disabled>create new</button></td><td class="custombuttoncell"><input id="newrowinput1" disabled></td><td class="custombuttoncell"><input id="newrowinput2" disabled></td><td class="custombuttoncell"><input id="newrowinput3" disabled></td><td class="custombuttoncell"><input id="newrowinput4" disabled><button id="newrowfileinputbutton">upload</button><input id="newrowfileinput" type="file" accept="image/*" disabled></td><td class="custombuttoncell"><input id="newrowinput5" disabled><button id="newrowremovehotkey1" title="remove" class="removebutton" disabled><img src="delete.png" alt="remove" class="removebuttonimage"></button></td><td class="custombuttoncell"><input id="newrowinput6" value="" disabled><button id="newrowremovehotkey2" title="remove" class="removebutton" disabled><img src="delete.png" alt="remove" class="removebuttonimage"></button></td><td class="custombuttoncell"><input id="newrowinput7" value="" disabled><button id="newrowremovehotkey3" title="remove" class="removebutton" disabled><img src="delete.png" alt="remove" class="removebuttonimage"></button></td></tr></table>
+       <div id="notes"><h3 id="notesheading">Notes</h3>
+        <b>Description:</b>
+        <p class="note">This is displayed when you hover over a button.</p>
+        <b>Home page URL:</b>
+        <p class="note">This determines the page you will be sent to if you perform a search without a query. Please include the "http" portion of the URL.</p>
+        <p class="note">As with the Search URL, you can use <i>%h</i> to insert the host name of the current web page (e.g. for a WHOIS lookup), and <i>%u</i> to insert the full URL of the current web page (e.g. for an Internet Archive search).</p>
+        <b>Search URL:</b>
+        <p class="note">SearchBar will usually be able to detect this automatically when you add a custom search via the right-click method. When this is not possible, you can try to obtain the search URL manually by performing a search using a test query, such as "TEST", copying the URL from the address bar, and replacing any instances of your test query with "%s".</p>
+        <p class="note">As well as <i>%s</i>, you can also use <i>%h</i> to insert the host name of the current web page (e.g. for Google site search), and <i>%u</i> to insert the full URL of the current web page (e.g. for Google cache search).</p>
+        <p class="note">For POST requests, you can use <i>??</i> in place of <i>?</i>.</p>
+        <b>Icon URI:</b>
+        <p class="note">You might like to use a website's favicon for its button icon. This is often linked to in a &lt;link rel="shortcut icon"&gt; or &lt;link rel="icon"&gt; tag near the top of the home page's source. It may be accessible from "http://www.example.com/favicon.ico" or "https://www.google.com/s2/favicons?domain=www.example.com", with "www.example.com" replaced by the website's host name.</p>
+        <p class="note">Alternatively, you can use any image by using the "upload" feature to convert it to a data URI.</p>
+        <b>Hotkey:</b>
+        <p class="note">Your primary search (highlighted at the top of the table) can, if it is enabled, be performed using the Enter key. You can also have another hotkey for this search.</p></div>
+    </fieldset>
+  </td>
+  <td id="help" class="settingsbar">
+    <h2>Support requests</h2>
+    <p>If you are experiencing a problem with SearchBar, have an idea for a new feature you'd like included, or have any question at all, then I would love to hear from you.</p>
+    <p>Simply submit a <a target="_blank" href="https://chrome.google.com/webstore/support/fjefgkhmchopegjeicnblodnidbammed#bug">bug report</a>, <a target="_blank" href="https://chrome.google.com/webstore/support/fjefgkhmchopegjeicnblodnidbammed#feature">feature suggestion</a> or <a target="_blank" href="https://chrome.google.com/webstore/support/fjefgkhmchopegjeicnblodnidbammed#question">question</a>. I will try to get back to you quickly &ndash; please check back for my response.</p>
+    <h2 class="faqheader">Frequently asked questions</h2>
+    <h3 class="faqheader">How do I add a particular search engine?</h3>
+    <p>The easiest way to do this is to right-click on the search engine's input field and select "Add to SearchBar...". Alternatively, you can add custom searches manually via the advanced options under "Custom searches".</p>
+    <h3 class="faqheader">How do I open search results in a new tab?</h3>
+    <p>Simply click the search button using the middle mouse button or holding the Ctrl key (just like for an ordinary link). To be able to open search results in a new tab by left-clicking, check the "Open search results in a new tab by default" checkbox.</p>
+    <p>You can also hold Ctrl while you are pressing a hotkey. Alternatively, you can specify your own new tab hotkeys via the advanced options under "Custom searches".</p>
+    <p>For your primary (leftmost) search (highlighted at the top of your custom searches), you can also press Ctrl+Enter.</p>
+    <h3 class="faqheader">How do I perform two different searches at once?</h3>
+    <p>You can do this by setting a hotkey for one custom search to be the same as a new tab hotkey for another custom search. This can be done via the advanced options under "Custom searches".</p>
+    <h3 class="faqheader">How can I highlight an exact phrase made up of more than one word?</h3>
+    <p>Simply put the phrase inside quotation marks.</p>
+    <h3 class="faqheader">How can I backup or transfer my settings to another computer?</h3>
+    <p>You can do this using the "Import/export settings" feature under "Advanced settings". Simply copy the text from the box and save it in a convenient location. To restore your settings, paste the text into the box and click "Save changes".</p>
+    <p>This feature may not work if your settings exceed 65535 characters. The most common cause of this is large image uploads.</p>
+    <h3 class="faqheader">How do I get the hotkey for showing SearchBar to work on the New Tab page?</h3>
+    <p>SearchBar's hotkeys do not function on the New Tab page. However, you can set another hotkey by selecting "Keyboard shortcuts" from the bottom of Chrome's Extensions page.</p>
+    <h3 class="faqheader">Why does SearchBar sometimes appear in a popup when I press the toolbar button?</h3>
+    <p>The full version of SearchBar uses content scripts and so cannot run on the New Tab page or on Chrome settings pages (such as this page). The "popup" version allows you to access the main features of SearchBar from these pages by using the toolbar button. However, certain features are disabled for technical reasons.</p>
+    <p>There is an option to always show SearchBar in a popup when the toolbar button is pressed, available under "Advanced settings". Occasionally the popup will appear even if you don't have this option selected and are on an ordinary web page. The most common reason for this is that the page has not yet finished loading.</p>
+    <h3 class="faqheader">Why does a small empty tooltip sometimes appear when I press the toolbar button?</h3>
+    <p>The most common reason for this is that SearchBar is still loading. Loading times can be a little longer when you first open SearchBar. Please be patient.</p>
+    <h3 class="faqheader">Why do I get a yellow triangle ("page includes other resources that are not secure") over the padlock symbol in the address bar when using SearchBar?</h3>
+    <p>This may be caused by SearchBar displaying the icons for your custom searches if they are not transferred over a secure connection. To avoid this, use icon URIs beginning with "https:" rather than "http:". These can be changed via the advanced options under "Custom searches".</p>
+    <p>There is an option to use the images.weserv.nl image proxy, available under "Advanced settings". If this option is enabled and you are viewing a webpage over https, then SearchBar will attempt to use this proxy to display over https any icons with URIs beginning with "http:". Unfortunately this will not always be successful as not all image formats are supported. However, it is recommended to keep this option enabled to help with this issue.</p>
+    <h3 class="faqheader">Why does SearchBar need to "access my data on all websites"?</h3>
+    <p>Chrome requires this permission to be asked for in order for SearchBar to be inserted onto every page. However, SearchBar does not change or use any of your data outside of its declared features.</p>
+    <p>SearchBar has a search suggestions feature, which submits searches to Google in order to receive the suggestions, a search history feature, which stores your previous searches, and an option to use the images.weserv.nl image proxy for custom search icons. However, all of these features can be disabled from this page at any time. Note that you can also edit your search history from "Advanced settings", and that the search history feature is always disabled in incognito mode. Other than this, SearchBar will only send your search queries to the search engines you request.</p>
+    <p>If you are in danger of accidentally submitting sensitive data, then please temporarily disable SearchBar from Chrome's Extensions page.</p>
+    <h3 class="faqheader">How can I reset to the default settings?</h3>
+    <p>You can do this using the "Import/export settings" feature under "Advanced settings" by deleting everything and clicking "Save changes".</p>
+    <h3 class="faqheader">What inspired you to create such an amazing extension?</h3>
+    <p>This extension was borne out of personal frustration with Chrome's default search system and dissatisfaction with the features of similar extensions. I hope it improves your browsing experience as much as it has mine, and I would love to hear your feedback.</p>
+  </td>
+  <td id="support" class="settingsbar">
+    <img id="maarten" src="maarten.jpg">
+    <p>Hi, I'm Maarten, the author.</p>
+    <table id="aftermaarten"><tr><td class="supportcell">
+      <h2>Spread the word</h2>
+      <p id="spreadtheword"></p>
+    </td><td class="supportcell">
+      <h2>Rate and review</h2>
+      <p><a target="_blank" href="https://chrome.google.com/webstore/detail/searchbar/fjefgkhmchopegjeicnblodnidbammed/reviews"><img class="centredpicture" src="star.png"><img class="centredpicture" src="star.png"><img class="centredpicture" src="star.png"><img class="centredpicture" src="star.png"><img class="centredpicture" src="star.png"></a> You can rate and review SearchBar <a target="_blank" href="https://chrome.google.com/webstore/detail/searchbar/fjefgkhmchopegjeicnblodnidbammed/reviews">here</a>.<br><small>(The place for bug reports, questions and feature suggestions is <a target="_blank" href="https://chrome.google.com/webstore/support/fjefgkhmchopegjeicnblodnidbammed">here</a>.)</small></p>
+    </td></tr></table>
+    <h2>Sponsor SearchBar</h2>
+    <a target="_blank" href="http://www.againstmalaria.com/SearchBar"><img id="brobiglogo" src="logo_bro.jpg"></a>
+    <p>I'd be <b>incredibly</b> grateful if you would sponsor me by donating to Against Malaria Foundation via the following link.</p>
+    <p><b><a target="_blank" href="http://www.againstmalaria.com/SearchBar">http://www.againstmalaria.com/SearchBar</a></b></p>
+    <p>I have chosen to support Against Malaria Foundation because they are considered to be an extremely cost-effective charity by charity evaluators <a target="_blank" href="http://www.givingwhatwecan.org/">Giving What We Can</a> and <a target="_blank" href="http://www.givewell.org/">GiveWell</a>.</p>
+  </td></tr></table>
+</body></html>
