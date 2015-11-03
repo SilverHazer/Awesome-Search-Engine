@@ -9,6 +9,7 @@ Added search engines
 - Github
 
 Wishlist
-Add other search engine with rightmouse 
-Automated icon fetch
-Custom searchbar settings in cp
+- Add other search engine with rightmouse 
+- Automated icon fetch
+- Custom searchbar settings in cp
+- Multiple profiles (maybe..)
