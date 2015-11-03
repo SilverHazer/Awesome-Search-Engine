@@ -247,7 +247,7 @@ window.addEventListener("load",function(){
       searchbar.style.border="1px solid #bababa";
       searchbar.style.backgroundColor="#e0e0e0";
       searchbar.style.color="#b0b0b0";
-      searchbar.style.font=16+settings.extrapixels+"px sans-serif";
+      searchbar.style.font=12+settings.extrapixels+"px sans-serif";
       searchbar.style.cursor="default";
       searchbar.style.textAlign=settings.position[1];
       searchbar.style.direction=settings.direction;
