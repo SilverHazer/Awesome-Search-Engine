@@ -157,7 +157,6 @@
           document.documentElement.style.position="relative";
         }
         iframe.style.width = "100%";
-        iframe.style.backgroundColor=""
         window.setTimeout(fixdisplay,1);
       };
       var hide=function(){
@@ -443,7 +442,7 @@
       searchbar.style.height="auto";
       searchbar.style.zIndex="2147483646";
       searchbar.style.padding="3px";
-      searchbar.style.backgroundColor = "#F7F7F7";
+      searchbar.style.backgroundColor = "transparent";
       searchbar.style.color="#b0b0b0";
       searchbar.style.cursor="default";
       searchbar.oldoffsetheight=0;
