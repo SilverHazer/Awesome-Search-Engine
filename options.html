@@ -267,23 +267,7 @@ span#portwarning b{
       <p>To add a new custom search, right-click on any search engine's input field and select "Add to SearchBar...".<br>
         Alternatively, you can add custom searches manually via the advanced options.<br>
         <button id="toggleadvanced">show advanced options</button></p>
-      <table id="custombuttons"><tr><th class="custombuttonsheader">Properties<br><small>(hover to view)</small></th><th class="custombuttonsheader">Description<br><small>&nbsp;</small></th><th class="custombuttonsheader">Home page URL<br><small>(see note below)</small></th><th class="custombuttonsheader">Search URL<br><small>with <i>%s</i> in place of query</small></th><th class="custombuttonsheader">Icon URI<br><small>(see note below)</small></th><th class="custombuttonsheader">Hotkey<br><small>(press cross to remove)</small></th><th class="custombuttonsheader">New tab hotkey<br><small>&ndash; background tab</small></th><th class="custombuttonsheader">New tab hotkey<br><small>&ndash; foreground tab</small></th></tr>
-        <tr id="newrow"><td class="custombuttoncell"><button id="newrowcreatenew" disabled>create new</button></td><td class="custombuttoncell"><input id="newrowinput1" disabled></td><td class="custombuttoncell"><input id="newrowinput2" disabled></td><td class="custombuttoncell"><input id="newrowinput3" disabled></td><td class="custombuttoncell"><input id="newrowinput4" disabled><button id="newrowfileinputbutton">upload</button><input id="newrowfileinput" type="file" accept="image/*" disabled></td><td class="custombuttoncell"><input id="newrowinput5" disabled><button id="newrowremovehotkey1" title="remove" class="removebutton" disabled><img src="delete.png" alt="remove" class="removebuttonimage"></button></td><td class="custombuttoncell"><input id="newrowinput6" value="" disabled><button id="newrowremovehotkey2" title="remove" class="removebutton" disabled><img src="delete.png" alt="remove" class="removebuttonimage"></button></td><td class="custombuttoncell"><input id="newrowinput7" value="" disabled><button id="newrowremovehotkey3" title="remove" class="removebutton" disabled><img src="delete.png" alt="remove" class="removebuttonimage"></button></td></tr></table>
-       <div id="notes"><h3 id="notesheading">Notes</h3>
-        <b>Description:</b>
-        <p class="note">This is displayed when you hover over a button.</p>
-        <b>Home page URL:</b>
-        <p class="note">This determines the page you will be sent to if you perform a search without a query. Please include the "http" portion of the URL.</p>
-        <p class="note">As with the Search URL, you can use <i>%h</i> to insert the host name of the current web page (e.g. for a WHOIS lookup), and <i>%u</i> to insert the full URL of the current web page (e.g. for an Internet Archive search).</p>
-        <b>Search URL:</b>
-        <p class="note">SearchBar will usually be able to detect this automatically when you add a custom search via the right-click method. When this is not possible, you can try to obtain the search URL manually by performing a search using a test query, such as "TEST", copying the URL from the address bar, and replacing any instances of your test query with "%s".</p>
-        <p class="note">As well as <i>%s</i>, you can also use <i>%h</i> to insert the host name of the current web page (e.g. for Google site search), and <i>%u</i> to insert the full URL of the current web page (e.g. for Google cache search).</p>
-        <p class="note">For POST requests, you can use <i>??</i> in place of <i>?</i>.</p>
-        <b>Icon URI:</b>
-        <p class="note">You might like to use a website's favicon for its button icon. This is often linked to in a &lt;link rel="shortcut icon"&gt; or &lt;link rel="icon"&gt; tag near the top of the home page's source. It may be accessible from "http://www.example.com/favicon.ico" or "https://www.google.com/s2/favicons?domain=www.example.com", with "www.example.com" replaced by the website's host name.</p>
-        <p class="note">Alternatively, you can use any image by using the "upload" feature to convert it to a data URI.</p>
-        <b>Hotkey:</b>
-        <p class="note">Your primary search (highlighted at the top of the table) can, if it is enabled, be performed using the Enter key. You can also have another hotkey for this search.</p></div>
+<p class="note">primary search (highlighted at the top of the table) can.</p></div>
     </fieldset>
   </td>
   <td id="helplink" class="settingsbar">
